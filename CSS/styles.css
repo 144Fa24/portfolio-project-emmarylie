@@ -1,0 +1,47 @@
+/*
+ Author: Emma Smith
+ Date: 10/03/24
+ File name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and image */
+body {
+    background-color: white;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for navigation area */
+header {
+    width: 25%;
+    float: center;
+}
+
+/* Style rules for navigation area */
+nav {
+    width: 45%;
+    float: left;
+    color: #caf8ca;
+}
+
+nav ul {
+        list-style-type: none;
+        margin: 0;
+        text-align: right;
+}
+
+nav li {
+        display: inline-block;
+        font-size: 1.5em;
+        font-family: Verdana, Arial, sans-serif;
+        font-weight: bold;
+}

@@ -1,0 +1,196 @@
+/*
+ Author: Emma Smith
+ Date: 10/03/24
+ File name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body an images */
+body {
+    background-color: #ffd5db
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for naigation area */
+header {    
+    background-color: #9caf88;
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+nav {
+    width: 70%;
+    float: right;
+    margin: 5em 3em 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+        display: inline-block;
+    font-size: 1.5em;
+    font-family: Times New Roman, Times, serif;
+    font-weight: bold;
+}
+nav li a {
+     display: block;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em 1em;
+        text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    clear: left;
+    background-color: #9caf88;
+    padding: 2%;
+    font-size: 1.25em;
+}
+
+div {
+    background-color: #ffd5db;
+}
+
+h1 {
+    color: navy;
+}
+
+h3 {
+    color: navy;
+}
+
+h5 {
+    color: navy;
+}
+
+.emma {
+    font-size: 1.35em;
+    color: navy;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+  display: block;
+}
+
+.tablet-desktop {
+  display: none;
+}
+
+/* Style rules for mobile viewpoint */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* Style rule for header */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ffd5db;
+  height: 190px;
+}
+
+header img {
+  margin: 0 auto;
+}
+
+/* Style rules for navigation area */
+nav {
+  padding: 1%; 
+  margin-bottom: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  font-size: 1.5em;
+  font-family: 'Times new Roman';
+  border-top: 1px soild #fff;
+}
+
+nav li:first-child {
+  border-top:none
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+    
+.tel-link {
+  background-color: #9caf88;
+  padding: 2%;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Media Query for Tablet Viewport */ 
+@media screen and (min-width: 630px) {
+
+    /* Tablet Viewpoint: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop { 
+        display: block;
+    }
+    
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #ffd5db; 
+    }
+}
+    
+/* Media Query for Desktop Viewport */
+    @media screen and (min-width: 1015px) {
+
+    /* Desktop Viewport: Style rule for header */
+    .header {
+        padding: 2%;
+    }
+        
+  /* Desktop Viewport: Style rules for nav area */
+    nav li a:hover {
+        padding: 0.5em 1.5em; 
+        color: navy;
+        background-color: #9caf88;
+    }
+        
+  /* Desktop Viewport: Style rule for header */
+  header {
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+  }
+}
